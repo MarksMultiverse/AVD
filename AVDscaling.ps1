@@ -31,8 +31,8 @@ $objId = (Get-AzADServicePrincipal -AppId "9cdead84-a844-4324-93f2-b2e6bb768d07"
 New-AzRoleAssignment -ObjectId $objId -RoleDefinitionName "Desktop Virtualization Autoscale" -Scope "/subscriptions/$subscriptionID/resourceGroups/$hostpoolRG"
 
 # Create autoscale scedule
-$parameters = @{
-    ScalingPlanName   = "AVD-ScalingPlan"
+$scalingparameters = @{
+    ScalingPlanName   = "AVDTestScalingPlan"
     ResourceGroupName = $hostpoolRG
     location         = "WestEurope"
     HostpoolType      = "Pooled"
@@ -57,5 +57,5 @@ $parameters = @{
     offPeakStartTime = "20:00"
     offPeakLoadBalancingAlgorithm = "DepthFirst"
 }
-New-AvdScalingPlan @parameters
+New-AvdScalingPlan @scalingparameters
 
