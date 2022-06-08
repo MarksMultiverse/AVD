@@ -16,10 +16,9 @@
         "Microsoft.DesktopVirtualization/hostpools/sessionhosts/read",
         "Microsoft.DesktopVirtualization/hostpools/sessionhosts/write",
         "Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/delete",
+	"Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/read",
+	"Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/sendMessage/action"
 		
-		"Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/read",
-		"Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/sendMessage/action",
-		"Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/read"
     ],
     "NotActions": [
   
