@@ -9,7 +9,7 @@ Get-AzSubscription
 Set-AzContext -SubscriptionId "926771bb-5cdd-42a8-908b-04ef2a6d0343"
 
 $subscriptionID="926771bb-5cdd-42a8-908b-04ef2a6d0343"
-$hostpoolRG="rg-avd-004"
+$hostpoolRG="rg-avd-001"
 
 $AVDscalingroleUrl= "https://raw.githubusercontent.com/MarksMultiverse/AVD-Scaling/main/AVDscalingrole.json"
 $AVDscalingrolePath= "AVDscalingrole.json"
